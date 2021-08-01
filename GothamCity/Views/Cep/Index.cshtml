@@ -1,0 +1,35 @@
+﻿@model IEnumerable<GothamCity.Domain.Entities.Cep>
+
+@{
+    ViewData["Title"] = "Lista de Cep";
+}
+
+<h1>Lista de Cep</h1>
+
+<p>
+    <a class="btn btn-success" href="/Cep/Create">Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <label for="CodigoCep" class="control-label">Código Cep</label>
+            </th>
+            <th>
+                <label for="Cidade" class="control-label">Cidade</label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoCep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+        </tr>}
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.12.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+    <PackageReference Include="Swashbuckle.Core" Version="5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GothamCity.Infra\GothamCity.Infra.csproj" />
+    <ProjectReference Include="..\GothanCity.Domain\GothamCity.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
